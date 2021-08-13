@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 65.5%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+}
+.hamburger{
+    height: 5vh;
+    width: 5vw;
+    background: red;
+    display: none;
+}
+
+p{
+    padding: 2rem 0;
+}
+
+.intro-section{
+    height: 90vh;
+    width: 100vw;
+    background: tomato;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introOne, .introTwo{
+    height: 100%;
+    width: 50%;
+    background: wheat;
+}
+ 
+.introOne{
+    background: rgb(205, 50, 50);
+}
+
+.intro-section__one p{
+    width: 55ch;
+    padding: 2rem 0;
+}
+
+/* start of media queries */
+
+
+
+
+
+
+
+/* mobile */
+@media only screen and (min-width: 400px) and (max-width:749px){
+    body{
+        background: rgb(176, 252, 176);
+    }
+    
+    h1{
+        font-size: 5rem;
+    }
+    nav{
+        background: #f9f9f9;
+    }
+    .hamburger{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    .introOne, .introTwo{
+        
+        width: 100%;
+    
+    }
+    .introOne{
+        background: yellowgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p{
+        padding: 2rem 0;
+        width: 45ch;
+        font-size: 1.4rem;
+    }
+}
+
+/* end of mobile */
+
+/* start of tablet */
+
+@media only screen and (min-width: 750px) and (max-width:1023px){
+    body{
+        background: rgb(240, 153, 153);
+    }
+    nav{
+        background: #f9f9f9;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+
+    .introOne{
+        background: yellowgreen;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5rem;
+    }
+
+
+}
+
+/* end of tablet */
+
+
+/* start of laptop */
+@media only screen and (min-width: 1024px){
+    body{
+        background: rgb(238, 253, 138);
+    }
+    h2{
+        font-size: 10rem;
+    }
+    nav{
+        background: #333;
+    }
+    li{
+        font-size: 2rem;
+        color: #f9f9f9;
+    }
+
+}
+
+/* end of laptop */
